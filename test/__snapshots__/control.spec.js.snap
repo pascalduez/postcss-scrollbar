@@ -1,69 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`control:  PostCSS API 1`] = `
-".scrollable::-webkit-scrollbar-thumb {
-  background-color: rebeccapurple;
-}
-.scrollable::-webkit-scrollbar-track {
-  background-color: green;
-}
-.scrollable::-webkit-scrollbar {
+".test::-webkit-scrollbar {
   width: 0.5rem;
 }
-.scrollable {
-  scrollbar-color: rebeccapurple green;
+.test {
+  -ms-overflow-style: auto;
   scrollbar-width: thin;
-}
-"
+}"
 `;
 
 exports[`control:  PostCSS legacy API 1`] = `
-".scrollable::-webkit-scrollbar-thumb {
-  background-color: rebeccapurple;
-}
-.scrollable::-webkit-scrollbar-track {
-  background-color: green;
-}
-.scrollable::-webkit-scrollbar {
+".test::-webkit-scrollbar {
   width: 0.5rem;
 }
-.scrollable {
-  scrollbar-color: rebeccapurple green;
+.test {
+  -ms-overflow-style: auto;
   scrollbar-width: thin;
-}
-"
+}"
 `;
 
 exports[`control:  no options 1`] = `
-".scrollable::-webkit-scrollbar-thumb {
-  background-color: rebeccapurple;
-}
-.scrollable::-webkit-scrollbar-track {
-  background-color: green;
-}
-.scrollable::-webkit-scrollbar {
+".test::-webkit-scrollbar {
   width: 0.5rem;
 }
-.scrollable {
-  scrollbar-color: rebeccapurple green;
+.test {
+  -ms-overflow-style: auto;
   scrollbar-width: thin;
-}
-"
+}"
 `;
 
 exports[`control:  with options 1`] = `
-".scrollable::-webkit-scrollbar-thumb {
-  background-color: rebeccapurple;
-}
-.scrollable::-webkit-scrollbar-track {
-  background-color: green;
-}
-.scrollable::-webkit-scrollbar {
+".test::-webkit-scrollbar {
   width: 0.5rem;
 }
-.scrollable {
-  scrollbar-color: rebeccapurple green;
+.test {
+  -ms-overflow-style: auto;
   scrollbar-width: thin;
-}
-"
+}"
 `;

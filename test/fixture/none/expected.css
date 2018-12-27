@@ -1,8 +1,0 @@
-.scrollable::-webkit-scrollbar {
-  width: 0;
-}
-
-.scrollable {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  scrollbar-width: thin;
-}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`options:  default options 1`] = `
+".test::-webkit-scrollbar {
+  width: initial;
+}
+.test {
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
+}"
+`;
+
+exports[`options:  with options 1`] = `
+".test::-webkit-scrollbar {
+  width: 0;
+}
+.test {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: none;
+}"
+`;

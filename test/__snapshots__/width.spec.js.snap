@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`width:  auto keyword 1`] = `
+".test::-webkit-scrollbar {
+  width: initial;
+}
+.test {
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
+}"
+`;
+
+exports[`width:  erroneous keyword 1`] = `
+".test {
+  scrollbar-width: 1rem;
+}"
+`;
+
+exports[`width:  none keyword 1`] = `
+".test::-webkit-scrollbar {
+  width: 0;
+}
+.test {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}"
+`;
+
+exports[`width:  thin keyword 1`] = `
+".test::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.test {
+  -ms-overflow-style: auto;
+  scrollbar-width: thin;
+}"
+`;

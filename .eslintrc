@@ -7,6 +7,7 @@ extends:
   - "prettier"
 
 plugins:
+  - "babel"
   - "jest"
 
 env:
@@ -14,6 +15,7 @@ env:
 
 rules:
   prefer-const: off
+  one-var: off
   no-use-before-define:
     - error
     - functions: false
@@ -24,6 +26,9 @@ rules:
       imports: "always-multiline"
       exports: "always-multiline"
       functions: ignore
+
+  no-unused-expressions: off
+  babel/no-unused-expressions: error
 
   import/no-extraneous-dependencies:
     - error

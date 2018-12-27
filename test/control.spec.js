@@ -1,43 +1,41 @@
-import fs from 'fs';
-import path from 'path';
 import postcss from 'postcss';
+import { stripIndent } from 'common-tags';
+import { name } from '../package.json';
 import plugin from '../src';
 
-const pluginName = require('../package.json').name;
-
-const read = name =>
-  fs.readFileSync(path.join(__dirname, 'fixture', name), 'utf8');
-
-const input = read('thin/input.css');
+let from, to;
+let input = stripIndent`
+  .test {
+    scrollbar-width: thin;
+  }
+`;
 
 describe('control: ', () => {
   test('no options', () =>
     postcss([plugin])
-      .process(input)
+      .process(input, { from, to })
       .then(result => {
         expect(result.css).toMatchSnapshot();
       }));
 
   test('with options', () =>
     postcss([plugin({})])
-      .process(input)
+      .process(input, { from, to })
       .then(result => {
         expect(result.css).toMatchSnapshot();
       }));
 
   test('PostCSS legacy API', () => {
-    const result = postcss([plugin.postcss]).process(input).css;
-    expect(result).toMatchSnapshot();
+    let result = postcss([plugin.postcss]).process(input, { from, to });
+    expect(result.css).toMatchSnapshot();
   });
 
   test('PostCSS API', async () => {
-    const processor = postcss();
-    processor.use(plugin);
-
-    const result = await processor.process(input);
+    let processor = postcss();
+    let result = await processor.use(plugin).process(input, { from, to });
 
     expect(result.css).toMatchSnapshot();
-    expect(processor.plugins[0].postcssPlugin).toBe(pluginName);
+    expect(processor.plugins[0].postcssPlugin).toBe(name);
     expect(processor.plugins[0].postcssVersion).toBeTruthy();
   });
 });

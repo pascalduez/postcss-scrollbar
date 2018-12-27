@@ -1,16 +1,16 @@
 /* eslint-disable no-console, one-var */
 
-import fs from 'fs';
-import path from 'path';
 import postcss from 'postcss';
 import reporter from 'postcss-reporter';
+import { stripIndent } from 'common-tags';
 import plugin from '../src';
 
-let read = name =>
-  fs.readFileSync(path.join(process.cwd(), 'test', 'fixture', name), 'utf8');
-
-let input = read('thin/input.css');
 let from, to;
+let input = stripIndent`
+  .test {
+    scrollbar-width: thin;
+  }
+`;
 
 postcss()
   .use(plugin)
