@@ -13,5 +13,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Initial release.
 
-[unreleased]: https://github.com/pascalduez/postcss-scrollbar/compare/0.1.0...HEAD
-[0.1.0]: https://github.com/pascalduez/postcss-scrollbar/tags/0.1.0
+[unreleased]: https://github.com/pascalduez/postcss-scrollbar/compare/0.2.0...HEAD
+[0.2.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.2.0
+[0.1.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.1.0
