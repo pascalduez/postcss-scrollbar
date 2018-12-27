@@ -1,11 +1,13 @@
 # postcss-scrollbar
 
 [![npm version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Coverage Status][codecov-image]][codecov-url]
 
 > [PostCSS] plugin enabling custom scrollbars
 
 Spec : https://drafts.csswg.org/css-scrollbars-1  
-Browser support: https://caniuse.com/#feat=css-scrollbar
+Browser support: https://caniuse.com/#feat=css-scrollbar  
 Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars
 
 ## Installation
@@ -89,9 +91,9 @@ postcss()
 
 type: `Boolean`  
 default: `false`  
-Allows for setting the scrollbar behaviour for the Edge Browser.
+Allows for setting the scrollbar behaviour for the Edge Browser.  
 `-ms-overflow-style: -ms-autohiding-scrollbar;`  
-Edge doesn't support scrollbar styling.
+Edge doesn't support scrollbar styling.  
 See https://developer.mozilla.org/fr/docs/Web/CSS/-ms-overflow-style
 
 ## Credits
@@ -113,4 +115,3 @@ postcss-scrollbar is [unlicensed](http://unlicense.org/).
 [depstat-image]: https://david-dm.org/pascalduez/postcss-scrollbar.svg?style=flat-square
 [license-image]: http://img.shields.io/npm/l/postcss-scrollbar.svg?style=flat-square
 [license-url]: UNLICENSE
-[spec]: https://tabatkins.github.io/specs/css-scrollbar-rule
