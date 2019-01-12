@@ -26,6 +26,7 @@
     "UNLICENSE"
   ],
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "lint": "eslint src/ test/",
     "validate": "run-s lint",
@@ -33,7 +34,7 @@
     "test:ci": "run-s validate test",
     "develop": "babel-node develop/",
     "prebuild": "rm -rf dist/",
-    "build": "babel src/ -d dist/",
+    "build": "rollup -c",
     "prepare": "run-s build",
     "prepublishOnly": "run-s validate test"
   },
@@ -61,6 +62,9 @@
     "jest-cli": "^23.6.0",
     "npm-run-all": "^4.0.2",
     "postcss-reporter": "^6.0.0",
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-json": "^3.1.0"
   }
 }
