@@ -3,6 +3,7 @@
 exports[`width:  auto keyword 1`] = `
 ".test::-webkit-scrollbar {
   width: initial;
+  height: initial;
 }
 .test {
   -ms-overflow-style: auto;
@@ -19,6 +20,7 @@ exports[`width:  erroneous keyword 1`] = `
 exports[`width:  none keyword 1`] = `
 ".test::-webkit-scrollbar {
   width: 0;
+  height: 0;
 }
 .test {
   -ms-overflow-style: none;
@@ -29,6 +31,7 @@ exports[`width:  none keyword 1`] = `
 exports[`width:  thin keyword 1`] = `
 ".test::-webkit-scrollbar {
   width: 0.5rem;
+  height: 0.5rem;
 }
 .test {
   -ms-overflow-style: auto;

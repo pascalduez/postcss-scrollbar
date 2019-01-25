@@ -59,12 +59,20 @@ export default postcss.plugin(name, (options = defaults) => (css, result) => {
       .rule({
         selector: processor.processSync(parent.selector),
       })
-      .append(
-        postcss.decl({
-          prop: 'width',
-          value: widthMap[keyword],
-        })
-      );
+
+    newRule.append(
+      postcss.decl({
+        prop: 'width',
+        value: widthMap[keyword],
+      })
+    );
+
+    newRule.append(
+      postcss.decl({
+        prop: 'height',
+        value: widthMap[keyword],
+      })
+    );
 
     root.insertBefore(parent, newRule);
 
