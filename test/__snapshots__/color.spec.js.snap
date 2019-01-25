@@ -7,6 +7,9 @@ exports[`color:  <color> <color> 1`] = `
 .test::-webkit-scrollbar-track {
   background-color: green;
 }
+.test::-webkit-scrollbar-corner {
+  background-color: green;
+}
 .test {
   scrollbar-color: rebeccapurple green;
 }"
@@ -23,6 +26,9 @@ exports[`color:  keyword 1`] = `
   background-color: initial;
 }
 .test::-webkit-scrollbar-track {
+  background-color: initial;
+}
+.test::-webkit-scrollbar-corner {
   background-color: initial;
 }
 .test {
