@@ -1,17 +1,14 @@
 language: node_js
 
 node_js:
-  - 8
-  - 'stable'
+  - lts/*
+  - stable
 
 sudo: false
 
 git:
   depth: 10
 
-before_install:
-  - npm i codecov -g
+script: yarn run test:ci
 
-script: npm run test:ci
-
-after_success: codecov
+after_success: yarn codecov
