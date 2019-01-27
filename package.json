@@ -39,7 +39,7 @@
     "prepublishOnly": "run-s validate test"
   },
   "dependencies": {
-    "postcss": "^7.0.7",
+    "postcss": "^7.0.14",
     "postcss-selector-parser": "^5.0.0",
     "postcss-value-parser": "^3.3.1"
   },
@@ -48,23 +48,21 @@
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
     "@babel/plugin-proposal-do-expressions": "^7.2.0",
-    "@babel/preset-env": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
+    "@babel/preset-env": "^7.3.1",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.4.2",
     "common-tags": "^1.8.0",
-    "eslint": "^5.11.1",
+    "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "jest-cli": "^23.6.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jest": "^22.1.3",
+    "jest": "^24.0.0",
     "npm-run-all": "^4.0.2",
-    "postcss-reporter": "^6.0.0",
-    "prettier": "^1.15.3",
-    "rollup": "^1.1.0",
-    "rollup-plugin-babel": "^4.3.0",
+    "postcss-reporter": "^6.0.1",
+    "prettier": "^1.16.1",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-json": "^3.1.0"
   }
 }
