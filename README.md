@@ -62,6 +62,7 @@ postcss()
 }
 .scrollable::-webkit-scrollbar {
   width: 0.5rem;
+  height: 0.5rem;
 }
 .scrollable {
   -ms-overflow-style: auto;
@@ -81,6 +82,7 @@ postcss()
 /* output */
 .scrollable::-webkit-scrollbar {
   width: 0;
+  height: 0;
 }
 .scrollable {
   -ms-overflow-style: none;
