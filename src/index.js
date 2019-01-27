@@ -103,12 +103,14 @@ export default postcss.plugin(name, (options = defaults) => (css, result) => {
           return {
             ...acc,
             track: colorMap[curr.value] || curr.value,
+            corner: colorMap[curr.value] || curr.value,
           };
         }
 
         return {
           thumb: colorMap[curr.value] || curr.value,
           track: colorMap[curr.value] || curr.value,
+          corner: colorMap[curr.value] || curr.value,
         };
       }, {});
 

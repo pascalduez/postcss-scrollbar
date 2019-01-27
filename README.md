@@ -57,6 +57,9 @@ postcss()
 .scrollable::-webkit-scrollbar-track {
   background-color: green;
 }
+.test::-webkit-scrollbar-corner {
+  background-color: green;
+}
 .scrollable::-webkit-scrollbar {
   width: 0.5rem;
 }
