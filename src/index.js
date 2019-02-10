@@ -36,7 +36,7 @@ export default postcss.plugin(name, (options = defaults) => (css, result) => {
     let { parent, value: keyword } = decl;
     let root = parent.parent;
 
-    if (!/auto|thin|none/.test(keyword)) {
+    if (!isValidWidth(keyword)) {
       return decl.warn(
         result,
         'Invalid value for property `scrollbar-width`. ' +
@@ -55,19 +55,15 @@ export default postcss.plugin(name, (options = defaults) => (css, result) => {
       });
     });
 
-    let newRule = postcss
-      .rule({
-        selector: processor.processSync(parent.selector),
-      })
+    let newRule = postcss.rule({
+      selector: processor.processSync(parent.selector),
+    });
 
     newRule.append(
       postcss.decl({
         prop: 'width',
         value: widthMap[keyword],
-      })
-    );
-
-    newRule.append(
+      }),
       postcss.decl({
         prop: 'height',
         value: widthMap[keyword],
@@ -95,7 +91,7 @@ export default postcss.plugin(name, (options = defaults) => (css, result) => {
   function processColor(decl) {
     let { nodes } = valueParser(decl.value);
 
-    if (nodes.length === 1 && !/auto|dark|light/.test(nodes[0].value)) {
+    if (isInvalidColor(nodes)) {
       return decl.warn(
         result,
         'Invalid value for property `scrollbar-color`. ' +
@@ -151,3 +147,15 @@ export default postcss.plugin(name, (options = defaults) => (css, result) => {
     });
   }
 });
+
+function isValidWidth(keyword) {
+  return /auto|thin|none/.test(keyword);
+}
+
+function isInvalidColor(nodes) {
+  return (
+    Array.isArray(nodes) &&
+    nodes.length === 1 &&
+    !/auto|dark|light/.test(nodes[0].value)
+  );
+}

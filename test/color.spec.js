@@ -3,34 +3,32 @@ import { stripIndent } from 'common-tags';
 import plugin from '../src';
 
 let from, to;
+let run = input =>
+  postcss()
+    .use(plugin)
+    .process(input, { from, to });
 
 describe('color: ', () => {
-  test('<color> <color>', () => {
+  test('<color> <color>', async () => {
     let input = stripIndent`
       .test {
         scrollbar-color: rebeccapurple green;
       }
     `;
 
-    return postcss([plugin()])
-      .process(input, { from, to })
-      .then(result => {
-        expect(result.css).toMatchSnapshot();
-      });
+    let result = await run(input);
+    expect(result.css).toMatchSnapshot();
   });
 
-  test('keyword', () => {
+  test('keyword', async () => {
     let input = stripIndent`
       .test {
         scrollbar-color: dark;
       }
     `;
 
-    return postcss([plugin()])
-      .process(input, { from, to })
-      .then(result => {
-        expect(result.css).toMatchSnapshot();
-      });
+    let result = await run(input);
+    expect(result.css).toMatchSnapshot();
   });
 
   test('erroneous keyword', async () => {
@@ -40,9 +38,7 @@ describe('color: ', () => {
       }
     `;
 
-    let result = await postcss()
-      .use(plugin)
-      .process(input, { from, to });
+    let result = await run(input);
 
     expect(result.css).toMatchSnapshot();
     expect(result.messages.length).toBeGreaterThan(0);

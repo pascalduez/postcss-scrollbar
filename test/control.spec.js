@@ -12,14 +12,16 @@ let input = stripIndent`
 
 describe('control: ', () => {
   test('no options', () =>
-    postcss([plugin])
+    postcss()
+      .use(plugin)
       .process(input, { from, to })
       .then(result => {
         expect(result.css).toMatchSnapshot();
       }));
 
   test('with options', () =>
-    postcss([plugin({})])
+    postcss()
+      .use(plugin({}))
       .process(input, { from, to })
       .then(result => {
         expect(result.css).toMatchSnapshot();

@@ -12,7 +12,8 @@ describe('options: ', () => {
       }
     `;
 
-    return postcss([plugin()])
+    return postcss()
+      .use(plugin)
       .process(input, { from, to })
       .then(result => {
         expect(result.css).toMatchSnapshot();
@@ -26,7 +27,8 @@ describe('options: ', () => {
       }
     `;
 
-    return postcss([plugin({ edgeAutohide: true })])
+    return postcss()
+      .use(plugin({ edgeAutohide: true }))
       .process(input, { from, to })
       .then(result => {
         expect(result.css).toMatchSnapshot();
