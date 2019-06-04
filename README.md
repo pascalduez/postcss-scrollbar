@@ -8,7 +8,10 @@
 
 Spec : https://drafts.csswg.org/css-scrollbars-1  
 Browser support: https://caniuse.com/#feat=css-scrollbar  
-Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars
+Docs:<br>
+https://developer.mozilla.org/docs/Web/CSS/CSS_Scrollbars  
+https://developer.mozilla.org/docs/Web/CSS/-ms-overflow-style  
+https://developer.mozilla.org/docs/Web/CSS/::-webkit-scrollbar  
 
 ## Installation
 
@@ -98,8 +101,7 @@ type: `Boolean`
 default: `false`  
 Allows for setting the scrollbar behaviour for the Edge Browser.  
 `-ms-overflow-style: -ms-autohiding-scrollbar;`  
-Edge doesn't support scrollbar styling.  
-See https://developer.mozilla.org/fr/docs/Web/CSS/-ms-overflow-style
+Edge doesn't support scrollbar styling.
 
 ## Credits
 
