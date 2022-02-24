@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`control:  PostCSS API 1`] = `
+exports[`control: PostCSS API 1`] = `
 ".test::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
@@ -11,7 +11,7 @@ exports[`control:  PostCSS API 1`] = `
 }"
 `;
 
-exports[`control:  PostCSS legacy API 1`] = `
+exports[`control: PostCSS legacy API 1`] = `
 ".test::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
@@ -22,7 +22,7 @@ exports[`control:  PostCSS legacy API 1`] = `
 }"
 `;
 
-exports[`control:  no options 1`] = `
+exports[`control: no options 1`] = `
 ".test::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
@@ -33,7 +33,7 @@ exports[`control:  no options 1`] = `
 }"
 `;
 
-exports[`control:  with options 1`] = `
+exports[`control: with options 1`] = `
 ".test::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;

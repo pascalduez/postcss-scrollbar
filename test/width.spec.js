@@ -4,7 +4,7 @@ import plugin from '../src';
 
 let from, to;
 
-describe('width: ', () => {
+describe('width:', () => {
   test('auto keyword', () => {
     let input = stripIndent`
       .test {
@@ -54,9 +54,7 @@ describe('width: ', () => {
       }
     `;
 
-    let result = await postcss()
-      .use(plugin)
-      .process(input, { from, to });
+    let result = await postcss().use(plugin).process(input, { from, to });
 
     expect(result.css).toMatchSnapshot();
     expect(result.messages.length).toBeGreaterThan(0);

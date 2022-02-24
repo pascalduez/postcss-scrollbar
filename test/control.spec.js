@@ -10,7 +10,7 @@ let input = stripIndent`
   }
 `;
 
-describe('control: ', () => {
+describe('control:', () => {
   test('no options', () =>
     postcss()
       .use(plugin)

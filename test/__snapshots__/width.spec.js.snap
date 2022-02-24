@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`width:  auto keyword 1`] = `
+exports[`width: auto keyword 1`] = `
 ".test::-webkit-scrollbar {
   width: initial;
   height: initial;
@@ -11,13 +11,13 @@ exports[`width:  auto keyword 1`] = `
 }"
 `;
 
-exports[`width:  erroneous keyword 1`] = `
+exports[`width: erroneous keyword 1`] = `
 ".test {
   scrollbar-width: 1rem;
 }"
 `;
 
-exports[`width:  none keyword 1`] = `
+exports[`width: none keyword 1`] = `
 ".test::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -28,7 +28,7 @@ exports[`width:  none keyword 1`] = `
 }"
 `;
 
-exports[`width:  thin keyword 1`] = `
+exports[`width: thin keyword 1`] = `
 ".test::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;

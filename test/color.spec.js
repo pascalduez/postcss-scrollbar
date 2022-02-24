@@ -3,12 +3,9 @@ import { stripIndent } from 'common-tags';
 import plugin from '../src';
 
 let from, to;
-let run = input =>
-  postcss()
-    .use(plugin)
-    .process(input, { from, to });
+let run = input => postcss().use(plugin).process(input, { from, to });
 
-describe('color: ', () => {
+describe('color:', () => {
   test('<color> <color>', async () => {
     let input = stripIndent`
       .test {

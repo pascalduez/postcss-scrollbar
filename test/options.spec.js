@@ -4,7 +4,7 @@ import plugin from '../src';
 
 let from, to;
 
-describe('options: ', () => {
+describe('options:', () => {
   test('default options', () => {
     let input = stripIndent`
       .test {

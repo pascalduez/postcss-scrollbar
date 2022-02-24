@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`color:  <color> <color> 1`] = `
+exports[`color: <color> <color> 1`] = `
 ".test::-webkit-scrollbar-thumb {
   background-color: rebeccapurple;
 }
@@ -15,13 +15,13 @@ exports[`color:  <color> <color> 1`] = `
 }"
 `;
 
-exports[`color:  erroneous keyword 1`] = `
+exports[`color: erroneous keyword 1`] = `
 ".test {
   scrollbar-color: blue;
 }"
 `;
 
-exports[`color:  keyword 1`] = `
+exports[`color: keyword 1`] = `
 ".test::-webkit-scrollbar-thumb {
   background-color: initial;
 }
