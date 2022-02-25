@@ -61,8 +61,8 @@ postcss()
   background-color: green;
 }
 .scrollable::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 8px;
+  height: 8px;
 }
 .scrollable {
   -ms-overflow-style: auto;

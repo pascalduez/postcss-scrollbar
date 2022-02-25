@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+  * Change default width value for the `thin` keyword from `rem` to `px`.
 
 ## [0.3.0] - 2019-01-27
 ### Added
