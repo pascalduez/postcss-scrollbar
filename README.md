@@ -92,6 +92,12 @@ postcss()
 
 ## options
 
+### `width`
+
+type: `String`  
+default: `8px`  
+Allows for setting the webkit fallbacks `width` and `height`.
+
 ### `edgeAutohide`
 
 type: `Boolean`  

@@ -20,7 +20,22 @@ describe('options:', () => {
       });
   });
 
-  test('with options', () => {
+  test('the `width` options', () => {
+    let input = stripIndent`
+      .test {
+        scrollbar-width: thin;
+      }
+    `;
+
+    return postcss()
+      .use(plugin({ width: '11px' }))
+      .process(input, { from, to })
+      .then(result => {
+        expect(result.css).toMatchSnapshot();
+      });
+  });
+
+  test('the `edgeAutohide` options', () => {
     let input = stripIndent`
       .test {
         scrollbar-width: none;

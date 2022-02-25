@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
   * Change default width value for the `thin` keyword from `rem` to `px`.
 
+### Added
+  * A new `width` option.
+    Allows for setting the webkit fallbacks `width` and `height`.
+
 ## [0.3.0] - 2019-01-27
 ### Added
  * Added webkit scrollbar corner background color (#2).
