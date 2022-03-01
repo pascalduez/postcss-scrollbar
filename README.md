@@ -1,7 +1,7 @@
 # postcss-scrollbar
 
 [![npm version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![CI Status][ci-image]][ci-url]
 [![Coverage Status][codecov-image]][codecov-url]
 
 > [PostCSS] plugin enabling custom scrollbars
@@ -118,11 +118,10 @@ postcss-scrollbar is [unlicensed](http://unlicense.org/).
 [postcss]: https://github.com/postcss/postcss
 [npm-url]: https://www.npmjs.org/package/postcss-scrollbar
 [npm-image]: http://img.shields.io/npm/v/postcss-scrollbar.svg?style=flat-square
-[travis-url]: https://travis-ci.org/pascalduez/postcss-scrollbar?branch=master
-[travis-image]: http://img.shields.io/travis/pascalduez/postcss-scrollbar.svg?style=flat-square
+[ci-url]: https://github.com/pascalduez/postcss-scrollbar/actions/workflows/ci.yml
+[ci-image]: https://img.shields.io/github/workflow/status/pascalduez/postcss-scrollbar/test?style=flat-square
 [codecov-url]: https://codecov.io/gh/pascalduez/postcss-scrollbar
 [codecov-image]: https://img.shields.io/codecov/c/github/pascalduez/postcss-scrollbar.svg?style=flat-square
-[depstat-url]: https://david-dm.org/pascalduez/postcss-scrollbar
-[depstat-image]: https://david-dm.org/pascalduez/postcss-scrollbar.svg?style=flat-square
 [license-image]: http://img.shields.io/npm/l/postcss-scrollbar.svg?style=flat-square
 [license-url]: UNLICENSE
+
