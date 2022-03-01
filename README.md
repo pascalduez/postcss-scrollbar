@@ -13,13 +13,13 @@ Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars
 ## Installation
 
 ```
-npm install postcss-scrollbar --save-dev
+npm install postcss postcss-scrollbar --save-dev
 ```
 
 or
 
 ```
-yarn add postcss-scrollbar --save-dev
+yarn add postcss postcss-scrollbar --save-dev
 ```
 
 ## Usage

@@ -11,17 +11,6 @@ exports[`control: PostCSS API 1`] = `
 }"
 `;
 
-exports[`control: PostCSS legacy API 1`] = `
-".test::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-.test {
-  -ms-overflow-style: auto;
-  scrollbar-width: thin;
-}"
-`;
-
 exports[`control: no options 1`] = `
 ".test::-webkit-scrollbar {
   width: 8px;
