@@ -6,9 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.5.0] - 2022-03-01
 ### Changed
+  **Breaking**
   * PostCSS 8 migration.
-    New requires `postcss >= 8` as peerDependency.
+    Now requires `postcss >= 8` as peerDependency.
 
 ## [0.4.0] - 2022-02-25
 ### Changed
@@ -31,7 +34,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.1.0] - 2018-12-20
 - Initial release.
 
-[unreleased]: https://github.com/pascalduez/postcss-scrollbar/compare/0.4.0...HEAD
+[unreleased]: https://github.com/pascalduez/postcss-scrollbar/compare/0.5.0...HEAD
+[0.5.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.5.0
 [0.4.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.4.0
 [0.3.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.3.0
 [0.2.1]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.2.1
