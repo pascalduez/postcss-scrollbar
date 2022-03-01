@@ -1,15 +1,5 @@
-const isCI = require('is-ci');
-
-const config = {
+module.exports = {
   testEnvironment: 'node',
   cacheDirectory: '.jest-cache',
   collectCoverageFrom: ['src/*.js'],
 };
-
-if (isCI) {
-  Object.assign(config, {
-    collectCoverage: true,
-  });
-}
-
-module.exports = config;
