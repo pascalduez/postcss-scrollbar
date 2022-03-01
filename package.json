@@ -31,7 +31,7 @@
     "lint": "eslint src/ test/",
     "validate": "run-s lint",
     "test": "jest",
-    "test:ci": "run-s test --coverage",
+    "test:ci": "run-s 'test --coverage'",
     "develop": "babel-node develop/",
     "prebuild": "rm -rf dist/",
     "build": "rollup -c",
