@@ -27,17 +27,11 @@ describe('control:', () => {
         expect(result.css).toMatchSnapshot();
       }));
 
-  test('PostCSS legacy API', () => {
-    let result = postcss([plugin.postcss]).process(input, { from, to });
-    expect(result.css).toMatchSnapshot();
-  });
-
   test('PostCSS API', async () => {
     let processor = postcss();
     let result = await processor.use(plugin).process(input, { from, to });
 
     expect(result.css).toMatchSnapshot();
     expect(processor.plugins[0].postcssPlugin).toBe(name);
-    expect(processor.plugins[0].postcssVersion).toBeTruthy();
   });
 });

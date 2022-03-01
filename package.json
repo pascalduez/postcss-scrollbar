@@ -42,7 +42,6 @@
     "prepublishOnly": "run-s validate test"
   },
   "dependencies": {
-    "postcss": "^7.0.27",
     "postcss-selector-parser": "^6.0.9",
     "postcss-value-parser": "^4.2.0"
   },
@@ -63,10 +62,14 @@
     "eslint-plugin-jest": "^26.1.1",
     "jest": "^27.5.1",
     "npm-run-all": "^4.0.2",
+    "postcss": "^8.4.7",
     "postcss-reporter": "^6.0.1",
     "prettier": "^2.5.1",
     "rollup": "^2.68.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-json": "^4.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
   }
 }
