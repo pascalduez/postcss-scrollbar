@@ -28,8 +28,11 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "lint": "eslint src/ test/",
-    "validate": "run-s lint",
+    "lint:js": "eslint src/ test/",
+    "lint": "run-s lint:*",
+    "format:check": "prettier -l '{src,test}/**/*.{js,css}'",
+    "format:write": "prettier --write '{src,test}/**/*.{js,css}'",
+    "validate": "run-s lint format:check",
     "test": "jest",
     "test:ci": "run-s 'test --coverage'",
     "develop": "babel-node develop/",

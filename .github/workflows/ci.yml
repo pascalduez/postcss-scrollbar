@@ -6,8 +6,12 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  test:
+  test-and-validate:
     runs-on: ubuntu-latest
 
     strategy:
@@ -21,9 +25,19 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
 
-      - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: yarn run test:ci
+      - name: Install
+        run: yarn install --frozen-lockfile --ignore-scripts
+    
+      - name: Test
+        run: yarn run test:ci
 
       - name: Upload coverage
         uses: codecov/codecov-action@v2
+
+      - name: Lint
+        run: yarn run lint
+
+      - name: Format
+        run: yarn run format:check
