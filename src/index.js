@@ -85,21 +85,35 @@ function postcssScrollbar({ width = '8px', edgeAutohide = false } = {}) {
       );
     }
 
+    function getColorValue(node) {
+      if (colorMap[node.value]) {
+        return colorMap[node.value]
+      }
+
+      if (node.type === 'word') {
+        return node.value
+      }
+
+      if (node.type === 'function') {
+        return decl.value.slice(node.sourceIndex, node.sourceEndIndex)
+      }
+    }
+
     let values = nodes
-      .filter(value => value.type === 'word')
+      .filter(value => value.type === 'word' || value.type === 'function')
       .reduce((acc, curr, idx) => {
         if (idx >= 1) {
           return {
             ...acc,
-            track: colorMap[curr.value] || curr.value,
-            corner: colorMap[curr.value] || curr.value,
+            track: getColorValue(curr),
+            corner: getColorValue(curr),
           };
         }
 
         return {
-          thumb: colorMap[curr.value] || curr.value,
-          track: colorMap[curr.value] || curr.value,
-          corner: colorMap[curr.value] || curr.value,
+          thumb: getColorValue(curr),
+          track: getColorValue(curr),
+          corner: getColorValue(curr),
         };
       }, {});
 
