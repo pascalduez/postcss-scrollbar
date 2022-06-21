@@ -1,6 +1,6 @@
 {
   "name": "postcss-scrollbar",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "PostCSS plugin enabling custom scrollbars",
   "keywords": [
     "css",

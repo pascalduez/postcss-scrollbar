@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.5.1] - 2022-06-21
+### Fixed
+  * Functional colors being ignored in `scrollbar-color` (#13).
+
 ## [0.5.0] - 2022-03-01
 ### Changed
   **Breaking**
@@ -34,7 +38,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.1.0] - 2018-12-20
 - Initial release.
 
-[unreleased]: https://github.com/pascalduez/postcss-scrollbar/compare/0.5.0...HEAD
+[unreleased]: https://github.com/pascalduez/postcss-scrollbar/compare/0.5.1...HEAD
+[0.5.1]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.5.1
 [0.5.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.5.0
 [0.4.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.4.0
 [0.3.0]: https://github.com/pascalduez/postcss-scrollbar/releases/tag/0.3.0
