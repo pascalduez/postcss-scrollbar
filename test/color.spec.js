@@ -28,6 +28,17 @@ describe('color:', () => {
     expect(result.css).toMatchSnapshot();
   });
 
+  test('functional color', async () => {
+    let input = stripIndent`
+      .test {
+        scrollbar-color: rgb(255, 0, 0) transparent;
+      }
+    `;
+
+    let result = await run(input);
+    expect(result.css).toMatchSnapshot();
+  });
+
   test('erroneous keyword', async () => {
     let input = stripIndent`
       .test {

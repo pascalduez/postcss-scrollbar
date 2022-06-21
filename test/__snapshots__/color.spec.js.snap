@@ -21,6 +21,21 @@ exports[`color: erroneous keyword 1`] = `
 }"
 `;
 
+exports[`color: functional color 1`] = `
+".test::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 0);
+}
+.test::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.test::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.test {
+  scrollbar-color: rgb(255, 0, 0) transparent;
+}"
+`;
+
 exports[`color: keyword 1`] = `
 ".test::-webkit-scrollbar-thumb {
   background-color: initial;
