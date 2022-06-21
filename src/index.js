@@ -87,15 +87,15 @@ function postcssScrollbar({ width = '8px', edgeAutohide = false } = {}) {
 
     function getColorValue(node) {
       if (colorMap[node.value]) {
-        return colorMap[node.value]
+        return colorMap[node.value];
       }
 
       if (node.type === 'word') {
-        return node.value
+        return node.value;
       }
 
       if (node.type === 'function') {
-        return decl.value.slice(node.sourceIndex, node.sourceEndIndex)
+        return decl.value.slice(node.sourceIndex, node.sourceEndIndex);
       }
     }
 
