@@ -25,7 +25,7 @@ yarn add postcss postcss-scrollbar --save-dev
 ## Usage
 
 ```js
-const fs = require('fs');
+const fs = require('node:fs');
 const postcss = require('postcss');
 const scrollbar = require('postcss-scrollbar');
 
