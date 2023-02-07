@@ -119,11 +119,10 @@ postcss-scrollbar is [unlicensed](http://unlicense.org/).
 [npm-url]: https://www.npmjs.org/package/postcss-scrollbar
 [npm-image]: http://img.shields.io/npm/v/postcss-scrollbar.svg?style=flat-square
 [ci-url]: https://github.com/pascalduez/postcss-scrollbar/actions/workflows/ci.yml
-[ci-image]: https://img.shields.io/github/workflow/status/pascalduez/postcss-scrollbar/CI?style=flat-square
+[ci-image]: https://img.shields.io/github/actions/workflow/status/pascalduez/postcss-scrollbar/ci.yml?branch=main&style=flat-square
 [codecov-url]: https://codecov.io/gh/pascalduez/postcss-scrollbar
 [codecov-image]: https://img.shields.io/codecov/c/github/pascalduez/postcss-scrollbar.svg?style=flat-square
 [license-image]: http://img.shields.io/npm/l/postcss-scrollbar.svg?style=flat-square
 [license-url]: UNLICENSE
-
 
 
